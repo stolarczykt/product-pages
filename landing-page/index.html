@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>BeeEater</title>
+	<link rel="shortcut icon" href="resources/img/favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="resources/vendor/bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="resources/vendor/bootstrap/css/bootstrap-theme.min.css"/>
+	<link rel="stylesheet" href="resources/vendor/font-awesome/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="resources/vendor/font-awesome-animation/font-awesome-animation.min.css" />
+	<link id="theme" rel="stylesheet" href="resources/css/blue-and-white.css"/>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<h1>LOREM IPSUM</h1>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-12 col-sm-4 benefit faa-parent animated-hover">
+					<h2>
+						<span class="fa-stack">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-circle fa-stack-2x faa-burst"></i>
+							<i class="fa fa-location-arrow fa-rotate-45 fa-stack-1x"></i>
+						</span>
+						Lorem ipsum Lorem ipsum
+					</h2>
+				</div>
+				<div class="col-md-4 col-xs-12 col-sm-4 benefit faa-parent animated-hover">
+					<h2>
+						<span class="fa-stack">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-circle fa-stack-2x faa-burst"></i>
+							<i class="fa fa-location-arrow fa-rotate-45 fa-stack-1x"></i>
+						</span>
+						Lorem ipsum Lorem ipsum
+					</h2>
+				</div>
+				<div class="col-md-4 col-xs-12 col-sm-4 benefit faa-parent animated-hover">
+					<h2>
+						<span class="fa-stack">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-circle fa-stack-2x faa-burst"></i>
+							<i class="fa fa-location-arrow fa-rotate-45 fa-stack-1x"></i>
+						</span>
+						Lorem ipsum Lorem ipsum
+					</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-4">
+					<img src="resources/img/book.jpg" alt="Product image" class="img-responsive center-block"/>
+				</div>
+				<div class="col-md-7 col-sm-8 coming-soon">
+					<div class="row">
+						<div class="col-md-12">
+							<h5>Coming soon!</h5>
+						</div>
+					</div>
+					<div class="row" id="timer">
+						<div class="col-md-2 col-xs-3">
+							<span id="days"></span><br/>days
+						</div>
+						<div class="col-md-2 col-xs-3">
+							<span id="hours"></span><br/>hours
+						</div>
+						<div class="col-md-2 col-xs-3">
+							<span id="minutes"></span><br/>minutes
+						</div>
+						<div class="col-md-2 col-xs-3">
+							<span id="seconds"></span><br/>seconds
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis consectetur felis.
+								Donec vehicula non turpis lacinia tempus. Lorem ipsum dolor sit amet, consectetur adipiscing
+								elit. Vivamus lobortis consectetur felis. Donec vehicula non turpis lacinia tempus.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container follow">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8 section-header"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2><span>SIGN UP</span> TO GET NOTIFIED ABOUT UPDATES!</h2>
+				</div>
+			</div>
+			<div class="row newsletter">
+				<form action="https://gumroad.com/follow_from_embed_form" class="form-inline" method="post">
+					<input name="seller_id" type="hidden" value="your-gumroad-id">
+					<input name="email" placeholder="Your email" type="email">
+					<button type="submit" class="btn btn-default">NOTIFY ME</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<script src="resources/vendor/jquery/jquery-min.js"></script>
+	<script src="resources/vendor/moment/moment.min.js"></script>
+	<script src="resources/vendor/moment/moment-timezone.min.js"></script>
+	<script src="resources/vendor/jquery.countdown/jquery.countdown.min.js"></script>
+
+	<script>
+		var launchDay = moment.tz("2018-10-08 18:00", "Europe/Warsaw");
+		jQuery('#timer').countdown(launchDay.toDate(), function(event) {
+			jQuery(this).find('#days').text(event.strftime('%D'));
+			jQuery(this).find('#hours').text(event.strftime('%H'));
+			jQuery(this).find('#minutes').text(event.strftime('%M'));
+			jQuery(this).find('#seconds').text(event.strftime('%S'));
+		});
+	</script>
+</body>
+</html>

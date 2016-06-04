@@ -1,7 +1,7 @@
 #Responsive website templates for landing and product pages.
 
 Those templates were created as a part of [Small Product Lab](https://gumroad.com/smallproductlab) challenge.
-I created them in few days to prove myself that it's possible to build and launch something in very short period.
+I created them in few days to prove myself that it's possible to build and launch something in very short period of time.
 Moreover i wanted to learn how to build some frontend stuff.
 
 If you are building your own products, you've probably heard how important landing and product pages are.

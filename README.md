@@ -29,3 +29,5 @@ There is also [dev version](https://github.com/stolarczykt/product-pages-dev) av
 
 Feel free to use them. They are licensed under MIT license.
 
+Images credits to [Daniel Zedda](http://www.flickr.com/photos/astragony/).
+
